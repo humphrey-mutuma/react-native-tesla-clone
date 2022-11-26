@@ -10,10 +10,7 @@ export default function App() {
           <Text style={styles.subtitle}>Starting at $69 000</Text>
         </View>
       </View>
-      <View style={styles.CTAbtn}>
-        <Text style={styles.btnOrder}>Order Now</Text>
-        <Text style={styles.btnDelivery}>Touchless Delivery</Text>
-      </View>
+      
       <StatusBar style="auto" />
     </View>
   );
@@ -40,28 +37,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#5c5e62",
   },
-  CTAbtn: {
-    width: "100%",
-    alignItems: "center",
-    marginBottom: "30%",
-  },
-  btnOrder: {
-    backgroundColor: "black",
-    color: "white",
-    fontSize: 20,
-    padding: 10,
-    borderRadius: 25,
-    width: "75%",
-    textAlign: "center",
-  },
-  btnDelivery: {
-    marginTop: 5,
-    backgroundColor: "sky",
-    color: "black",
-    fontSize: 20,
-    padding: 10,
-    borderRadius: 25,
-    width: "75%",
-    textAlign: "center",
-  },
+ 
 });
