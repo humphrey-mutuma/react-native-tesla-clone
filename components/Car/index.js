@@ -19,11 +19,19 @@ export default function Car({ name, tagline, image, taglineCTA }) {
           title="Custom Order"
           onPress={() => console.warn("Custom Order was pressed")}
         />
-        <Button
-          type="secondary"
-          title="Existing Inventory"
-          onPress={() => console.warn("Inventory was pressed")}
-        />
+        {name === "Solar Panels" || name === "Solar Roof" ? (
+          <Button
+            type="secondary"
+            title="Learn More"
+            onPress={() => console.warn("Lean More was pressed")}
+          />
+        ) : (
+          <Button
+            type="secondary"
+            title="Existing Inventory"
+            onPress={() => console.warn("Inventory was pressed")}
+          />
+        )}
       </View>
     </View>
   );

@@ -22,4 +22,14 @@ export default [
     taglineCTA: "Touchless Delivery",
     image: require("./assets/images/ModelY.jpeg"),
   },
+  {
+    name: "Solar Panels",
+    tagline: "Lowest Cost Solar Panels in America",
+    image: require("./assets/images/SolarPanels.jpeg"),
+  },
+  {
+    name: "Solar Roof",
+    tagline: "Produce Clean Energy From Your Roof",
+    image: require("./assets/images/SolarRoof.jpeg"),
+  },
 ];
