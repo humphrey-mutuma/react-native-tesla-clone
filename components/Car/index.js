@@ -2,27 +2,26 @@ import { View, Text, ImageBackground } from "react-native";
 import React from "react";
 import { styles } from "./styles";
 import Button from "../Button";
-export default function Car() {
+export default function Car({ name, tagline, image }) {
   return (
     <View style={styles.carContainer}>
-      <ImageBackground
-        source={require("../../assets/images/ModelX.jpeg")}
-        style={styles.image}
-      />
+      <ImageBackground source={image} style={styles.image} />
       <View style={styles.titles}>
-        <Text style={styles.title}>Model S</Text>
-        <Text style={styles.subtitle}>Starting at $69 000</Text>
+        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.subtitle}>{tagline}</Text>
       </View>
-      <Button
-        type="primary"
-        title="Custom Order"
-        onPress={() => console.warn("Custom Order was pressed")}
-      />
-      <Button
-        type="secondary"
-        title="Existing Inventory"
-        onPress={() => console.warn("Inventory was pressed")}
-      />
+      <View style={styles.btnContainer}>
+        <Button
+          type="primary"
+          title="Custom Order"
+          onPress={() => console.warn("Custom Order was pressed")}
+        />
+        <Button
+          type="secondary"
+          title="Existing Inventory"
+          onPress={() => console.warn("Inventory was pressed")}
+        />
+      </View>
     </View>
   );
 }
