@@ -7,7 +7,8 @@ export default function App() {
     <View style={styles.container}>
       <Car
         name="Model X"
-        tagline="Starting at $69000"
+        tagline="Order Online for"
+        taglineCTA="Touchless Delivery"
         image={require("./assets/images/ModelX.jpeg")}
       />
       <StatusBar style="auto" />

@@ -15,6 +15,11 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: "#5c5e62",
   },
+  taglineCTA: {
+    fontSize: 16,
+    color: "#5c5e62",
+    textDecorationLine: "underline",
+  },
   image: {
     width: "100%",
     height: "100%",
@@ -25,5 +30,5 @@ export const styles = StyleSheet.create({
     position: "absolute",
     bottom: 50,
     width: "100%",
-   },
+  },
 });
